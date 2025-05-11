@@ -4,6 +4,7 @@ import 'package:hands_test/energy_chart.dart';
 import 'package:hands_test/money_saved_chart.dart';
 import 'package:hands_test/motion_chart.dart';
 import 'package:hands_test/noise_graph.dart';
+import 'package:hands_test/occupancy_dummy_data.dart';
 import 'package:hands_test/occupancy_graphs.dart';
 import 'package:hands_test/water_index_chart.dart';
 
@@ -30,11 +31,10 @@ class MyApp extends StatelessWidget {
                 SizedBox(height: 50),
                 MotionChart(),
                 SizedBox(height: 50),
-                OccupancyChart(),
+                OccupancyChart(occupancyData: occupancyData),
                 SizedBox(height: 50),
                 CrowdChart(),
                 SizedBox(height: 50),
-                // Security Chart same as crowd Chart
                 CrowdChart(),
                 SizedBox(height: 50),
                 MoldChart(),
